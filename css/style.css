@@ -93,27 +93,27 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.heder-conteiner {
+.heder__conteiner {
   display: flex;
   align-items: center;
 }
 
-.heder-logo {
+.heder__logo {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.heder-nav {
+.nav {
   margin-right: auto;
 }
 
-.heder-list {
+.nav__list {
   display: flex;
   gap: 50px;
 }
 
-.heder-link {
+.nav__link {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -125,31 +125,29 @@ img {
   transition: color var(--animation);
 }
 
-.heder-link:hover,
-.heder-link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--accent-color);
 }
 
-.current {
+.nav__link--current {
   position: relative;
   color: var(--accent-color);
 }
 
-.current::after {
+.nav__link--current::after {
   content: '';
   position: relative;
   bottom: -28px;
   left: 0;
-
   display: block;
   width: 100%;
   height: 4px;
-
   background: var(--accent-color);
   border-radius: 2px;
 }
 
-.heder-link-contact {
+.nav__link-contact {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
@@ -161,16 +159,16 @@ img {
   transition: color var(--animation);
 }
 
-.heder-link-contact:hover,
-.heder-link-contact:focus {
+.nav__link-contact:hover,
+.nav__link-contact:focus {
   color: var(--accent-color);
 }
 
-.contact-icon {
+.nav__icon {
   fill: currentColor;
 }
 
-.logo-accent {
+.heder__logo-accent {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -179,22 +177,13 @@ img {
   color: var(--accent-color);
 }
 
-.logo-main-dark {
+.heder__logo-dark {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
-}
-
-.logo-main-light {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: var(--white-color);
 }
 
 /* HERO */
@@ -212,7 +201,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.mail-title {
+.hero__title {
   font-weight: 900;
   color: var(--white-color);
   font-size: 44px;
@@ -226,7 +215,7 @@ img {
   margin-right: auto;
 }
 
-.hero-btn {
+.hero__btn {
   display: block;
   font-family: var(--main-font);
   font-weight: 700;
@@ -247,11 +236,16 @@ img {
 
 /* Benefist */
 
-.benefist-list {
+.benefist__list {
   display: flex;
   gap: 30px;
 }
-.benefist-box {
+
+.benefist__item {
+  width: 270px;
+}
+
+.benefist__box {
   height: 120px;
   background-color: var(--background3);
   display: flex;
@@ -260,11 +254,7 @@ img {
   margin-bottom: 30px;
 }
 
-.benefist-item {
-  width: 270px;
-}
-
-.benefist-title {
+.benefist__title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -272,7 +262,7 @@ img {
   text-transform: uppercase;
 }
 
-.benefist-desc {
+.benefist__desc {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -286,16 +276,16 @@ img {
   padding-bottom: 94px;
 }
 
-.works-list {
+.works__list {
   display: flex;
   gap: 30px;
 }
 
-.works-item {
+.works__item {
   position: relative;
 }
 
-.works-subtitle-box {
+.works__subtitle--box {
   width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -305,7 +295,7 @@ img {
   top: 224px;
 }
 
-.works-subtitle {
+.works__subtitle {
   color: var(--white-color);
   font-weight: 700;
   font-size: 14px;
@@ -321,31 +311,31 @@ img {
   padding-bottom: 94px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   gap: 30px;
 }
 
-.team-item {
+.team__item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-images-desc {
+.team__desc--box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-images {
+.team__images {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-desc {
+.team__desc {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
@@ -360,24 +350,43 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-box {
+.footer__box {
   display: flex;
+  align-items: baseline;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   gap: 70px;
 }
 
-.footer-conteiner {
+/* .footer__conteiner {
   padding: 0 15px;
-}
+} */
 
-.footer-logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 }
 
-.contact-address-desc {
+.footer__logo--accent {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.footer__logo--light {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.address__desc {
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -386,11 +395,11 @@ img {
   margin-bottom: 9px;
 }
 
-.contact-item:nth-last-child(2) {
+.address__item:nth-last-child(2) {
   margin-bottom: 9px;
 }
 
-.contact-link {
+.address__link {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -398,12 +407,12 @@ img {
   transition: color var(--animation);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: rgba(33, 150, 243, 0.6);
 }
 
-.footer-social .footer-social-list {
+.footer-social .footer-social__list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -411,7 +420,7 @@ img {
   margin-top: 20px;
 }
 
-.footer-social-title {
+.footer-social__title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -419,30 +428,36 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
 }
-.footer-social-link {
+
+.footer-social__link {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
 }
 
-.footer-register-form-list {
+.register__list {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 20px;
 }
 
-.footer-register-label {
+.register__form {
+  display: flex;
+  align-items: center;
+}
+
+.footer__label {
   display: inline-block;
-  margin-top: 20px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
 
-.footer-register-input {
+.register__input {
   min-width: 358px;
   padding: 15px 16px;
   font-size: 16px;
@@ -452,7 +467,7 @@ img {
   background-color: var(--backgraund1);
 }
 
-.footer-register-btn {
+.register__btn {
   display: inline-flex;
   align-items: center;
   text-align: center;
@@ -469,7 +484,7 @@ img {
   cursor: pointer;
 }
 
-.footer-register-btn-icon {
+.register__btn-icon {
   fill: var(--white-color);
 }
 
@@ -605,7 +620,7 @@ img {
   margin-top: 16px;
 }
 
-.social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -615,28 +630,28 @@ img {
   transition: background-color var(--animation);
 }
 
-.social-icon {
+.social__icon {
   fill: var(--social-link-color);
   transition: fill var(--animation);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent-color);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   fill: var(--white-color);
 }
 
 /* Clients */
 
-.client-section {
+.client {
   padding-bottom: 94px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -644,7 +659,7 @@ img {
   margin-top: 50px;
 }
 
-.client-link {
+.client__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-link-color);
@@ -655,17 +670,17 @@ img {
   transition: border var(--animation);
 }
 
-.client-link:hover,
-.contact-link:focus {
+.client__link:hover,
+.contact__link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.icon {
+.client__icon {
   fill: var(--social-link-color);
   transition: fill var(--animation);
 }
-.icon:hover,
-.icon:focus {
+.client__icon:hover,
+.client__icon:focus {
   fill: var(--accent-color);
 }
 
