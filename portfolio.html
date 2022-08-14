@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Normalize start -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <!-- Normalize end -->
 
     <!-- Fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +21,10 @@
     />
     <!-- Fonts end -->
 
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>WebStudio</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -27,12 +32,12 @@
     <!-- heder -->
 
     <header class="heder">
-      <div class="heder__conteiner conteiner">
+      <div class="heder__container">
         <a href="index.html" class="heder__logo link">
           <span class="heder__logo-accent">Web</span><span class="heder__logo-dark">Studio</span>
         </a>
         <nav class="nav">
-          <ul class="nav__list list">
+          <ul class="nav__list">
             <li class="nav__item">
               <a href="index.html" class="nav__link link">Студія</a>
             </li>
@@ -44,7 +49,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list nav__list">
+        <ul class="nav__list">
           <li class="nav__item">
             <a href="mailto:info@devstudio.com" class="nav__link-contact link">
               <svg class="nav__icon" width="16" height="12">
@@ -67,10 +72,10 @@
     <main>
       <!-- portfolio-filter -->
 
-      <section class="section">
-        <div class="conteiner portfolio">
+      <section class="portfolio">
+        <div class="portfolio__container">
           <h1 hidden>Вибір рабіт</h1>
-          <ul class="list portfolio__filret">
+          <ul class="portfolio__filret">
             <li class="portfolio__item">
               <button type="button" class="portfolio__btn portfolio__bnt--current">Все</button>
             </li>
@@ -91,8 +96,8 @@
           <!-- portfolio -->
 
           <h2 hidden>Портфоліо</h2>
-          <ul class="list portfolio-list">
-            <li class="portfolio-list__item">
+          <ul class="portfolio-list card-set">
+            <li class="portfolio-list__item card-set__item">
               <a href="" class="portfolio-list__link link">
                 <div class="portfolio__desc">
                   <img
@@ -115,7 +120,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item card-set__item">
               <a href="" class="portfolio-list__link link">
                 <img
                   src="./images/portfolio/project2.jpg"
@@ -131,7 +136,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item card-set__item">
               <a href="" class="portfolio-list__link link">
                 <img
                   src="./images/portfolio/project3.jpg"
@@ -147,7 +152,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item card-set__item">
               <a href="" class="portfolio-list__link link">
                 <img
                   src="./images/portfolio/project4.jpg"
@@ -163,7 +168,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item card-set__item">
               <a href="" class="portfolio-list__link link">
                 <img
                   src="./images/portfolio/project5.jpg"
@@ -177,7 +182,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item card-set__item">
               <a href="" class="portfolio-list__link link">
                 <img
                   src="./images/portfolio/project6.jpg"
@@ -193,7 +198,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item card-set__item">
               <a href="" class="portfolio-list__link link">
                 <img
                   src="./images/portfolio/project7.jpg"
@@ -209,7 +214,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item card-set__item">
               <a href="" class="portfolio-list__link link">
                 <img
                   src="./images/portfolio/project8.jpg"
@@ -223,7 +228,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item card-set__item">
               <a href="" class="portfolio-list__link link">
                 <img
                   src="./images/portfolio/project9.jpg"
@@ -245,15 +250,15 @@
     <!-- footer -->
 
     <footer class="footer">
-      <div class="footer__box">
-        <div class="footer__conteiner">
+      <div class="footer__container">
+        <div class="footer__box">
           <a href="index.html" class="footer__logo link">
             <span class="footer__logo--accent">Web</span
             ><span class="footer__logo--light">Studio</span>
           </a>
           <address class="address">
             <p class="address__desc">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="list address__list">
+            <ul class="address__list">
               <li class="address__item">
                 <a href="mailto:info@example.com" class="address__link link">info@example.com</a>
               </li>
@@ -265,7 +270,7 @@
         </div>
         <div class="footer-social">
           <h2 class="footer-social__title">приєднуйтесь</h2>
-          <ul class="list footer-social__list">
+          <ul class="footer-social__list">
             <li class="footer-social__item">
               <a
                 class="footer-social__link social__link link"

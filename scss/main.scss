@@ -1,0 +1,35 @@
+// utils styles
+@import './utils/variables';
+@import'./utils/visualy-hidden';
+@import'./utils/placeholders';
+@import'./utils/mixins';
+
+
+
+// base styles
+@import './base/base';
+@import './base/reset';
+
+// components styles
+@import './components/button';
+@import'./components/card-set';
+@import'./components/title';
+@import'./components/modal-form';
+@import'./components/social';
+@import'./components/register-form';
+
+
+
+
+// layout styles 
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/hero';
+@import './layout/works';
+@import './layout/benefist';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio';
+@import './layout/footer';
+
+

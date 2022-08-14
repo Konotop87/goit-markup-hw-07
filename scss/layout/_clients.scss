@@ -1,0 +1,42 @@
+.client {
+  @include section;
+}
+
+.client__container{
+  @extend %container;
+}
+
+.clients__list {
+  @extend %reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.client__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border var(--animation);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.client__icon {
+  fill: var(--social-link-color);
+  transition: fill var(--animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

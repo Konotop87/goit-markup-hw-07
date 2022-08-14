@@ -1,0 +1,43 @@
+.benefist{
+    @include section;
+    padding-bottom: 0;
+}
+
+.benefist__container{
+    @extend %container;
+}
+
+.benefist__list {
+    @extend %reset-list;
+    display: flex;
+    gap: 30px;
+}
+
+.benefist__item {
+    width: 270px;
+}
+
+.benefist__box {
+    height: 120px;
+    background-color: var(--background3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.benefist__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.benefist__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
